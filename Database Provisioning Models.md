@@ -19,7 +19,7 @@ The vCore Model is also split into 3 different Tiers
 + Business Critical
 
 ### General Purpose
-This Tier is for general workloads that do not need high Disk I/O performance, the disk latency on this Tier is roughly 5ms
+This Tier is for common workloads that do not need high Disk I/O performance, the disk latency on this Tier is roughly 5ms
 If you require a lower disk latency you would need to change to business Critical
 
 Within the General purpose Tier, you can choose up to 80 vCores for your Database and up to 415GB of memory
@@ -53,6 +53,7 @@ One thing to note here is that using this option will mean that the application 
 #### Checking the different Hardware
 
 If you click on change configuration link within the Hardware configuration setting, you will then be shown with all of the different Hardware compute options available 
+
 
 
 
