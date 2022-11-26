@@ -40,17 +40,21 @@ For example, if the maximum database size is 4TB (4096GB) the Log Space allocate
 #### Serverless
 Within the General Purpose Tier of the vCore purchasing Model, there is also a Serverless option.
 
-This enables you to pause the Database and not get charged when the database has not been in use for a specified period of time.
+This enables you to pause the Database and not get charged when the database has not been in use for a specified period of time. You are only billed on a per second of usage basis while the Database is not Paused. However, you will be billed for the Storage used all of the time
 
 The option is useful if you do not have constant connectivity to the Database
 
-You configure the auto-pause any time between 1 hour and 7 days. As soon as there has been inactivity going over the mimimum auto-pause setting the Database will then pause and you will not be charged for the Database during that time.
+You configure the auto-pause any time between 1 hour and 7 days. As soon as there has been inactivity going over the mimimum auto-pause setting the Database will then pause and you will not be charged for the Database during that time. 
 
 One thing to note here is that using this option will mean that the application may be required to have some retry logic set up when the connections hit a paused database. The Database will come back online quickly, but this could impact the Application. It would always be recomended to test this option before using it in a production environment.
 
 
 
 #### Checking the different Hardware
+
+If you click on change configuration link within the Hardware configuration setting, you will then be shown with all of the different Hardware compute options available 
+
+
 
 
 #### Checking the different settings with the Hardware
